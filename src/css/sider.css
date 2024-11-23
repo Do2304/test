@@ -1,0 +1,109 @@
+.sider {
+  background-color: #f6f1f1;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sider .line {
+  border-bottom: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 12px 20px -20px;
+  padding-top: 90px;
+}
+.sider .title {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.sider .menu-sider .box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(35, 35, 228);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.sider .menu-sider .box .icon {
+  padding: 5px 10px;
+
+  font-size: 20px;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+.sider .menu-sider .box1 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(240, 240, 243);
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+}
+.sider .menu-sider .box1 .icon {
+  padding: 5px 10px;
+  background: rgb(214, 213, 213);
+  font-size: 20px;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+
+@media (max-width: 992px) {
+  .sider .menu-sider .box {
+    /* font-size: 10px; */
+    padding: 5px 10px;
+    .icon {
+      padding: 3px 5px;
+      font-size: 17px;
+    }
+  }
+  .sider .menu-sider .box1 {
+    padding: 5px 10px;
+    .icon {
+      padding: 3px 5px;
+      font-size: 17px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .sider .menu-sider .box {
+    padding: 2px 4px;
+    .icon {
+      display: none;
+    }
+  }
+  .sider .menu-sider .box1 {
+    padding: 2px 4px;
+    .icon {
+      display: none;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .sider .menu-sider .box {
+    padding: 1px 2px;
+    .icon {
+      display: none;
+    }
+    span {
+      font-size: 12px;
+      padding: 2px;
+    }
+  }
+  .sider .menu-sider .box1 {
+    padding: 1px 2px;
+    .icon {
+      display: none;
+    }
+    span {
+      font-size: 12px;
+      padding: 2px;
+    }
+  }
+}

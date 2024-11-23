@@ -1,0 +1,88 @@
+.header {
+  background: white;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.header .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .menu .icon {
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+.header .menu span {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .info .image img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.header .info .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  margin: 10px;
+}
+.header .info .name-name {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.header .info .name-position {
+  font-size: 15px;
+  cursor: pointer;
+  /* line-height: 0; */
+}
+
+.header .info .down {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.header .info .bell {
+  margin: 10px;
+  height: 40px;
+  width: 40px;
+
+  background: rgb(124, 124, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .header .menu .mana {
+    display: none;
+  }
+  .header .menu .icon .icon-home {
+    font-weight: 600;
+    font-size: 40px;
+  }
+}

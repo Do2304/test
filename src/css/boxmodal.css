@@ -1,0 +1,25 @@
+.boxmodal {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.boxmodal .box {
+  display: flex;
+  align-items: center;
+}
+
+.boxmodal .box .icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.boxmodal .box span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.boxmodal .box.box1 {
+  background: rgb(4, 4, 239);
+  padding: 3px 6px;
+  border-radius: 5px;
+}

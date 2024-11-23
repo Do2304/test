@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  /* background: rgb(245, 241, 241); */
+  background: white;
+}
+
+.container {
+  width: 100%;
+  height: 100%px;
+  max-width: 1650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.siderCustom {
+  background: white;
+}
+.headerCustom {
+  padding: 0 15px;
+  background: white;
+  height: 88px;
+}
+.contentCustom {
+  padding: 0 15px;
+  background: white;
+}
+.footerCustom {
+  padding: 0 15px;
+  background-color: white;
+}
+
+
