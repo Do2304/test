@@ -11,10 +11,9 @@
   padding-top: 90px;
 }
 .sider .title {
-  padding-top: 10px;
+  padding: 10px 0 20px;
   font-size: 20px;
   font-weight: 700;
-  padding-bottom: 20px;
 }
 .sider .menu-sider .box {
   display: inline-flex;
@@ -22,8 +21,7 @@
   align-items: center;
   background: rgb(35, 35, 228);
   padding: 10px 20px;
-
-  margin: 10px 10px;
+  margin: 10px;
   border-radius: 10px;
   color: white;
   cursor: pointer;
@@ -75,12 +73,5 @@
 @media (max-width: 440px) {
   .sider .title {
     font-size: 15px;
-  }
-  .sider .menu-sider .box {
-    padding: 2px 4px;
-    display: flex;
-    .box-title {
-      display: none;
-    }
   }
 }

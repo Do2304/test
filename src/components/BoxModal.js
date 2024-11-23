@@ -7,35 +7,22 @@ import {
 import "../css/boxmodal.css";
 
 function BoxModal() {
+  const menuItems = [
+    { icon: <LaptopOutlined />, label: "View Resources" },
+    { icon: <EditOutlined />, label: "Edit Resources" },
+    { icon: <HistoryOutlined />, label: "Version History" },
+    { icon: <DeleteOutlined />, label: "Delete Resources" },
+  ];
+
   return (
-    <>
-      <div className="boxmodal">
-        <div className="box box1">
-          <div className="icon">
-            <LaptopOutlined />
-          </div>
-          <span>View Resources</span>
+    <div className="boxmodal">
+      {menuItems.map((item, index) => (
+        <div className="box" key={index}>
+          <div className="icon">{item.icon}</div>
+          <span>{item.label}</span>
         </div>
-        <div className="box">
-          <div className="icon">
-            <EditOutlined />
-          </div>
-          <span>Edit Resources</span>
-        </div>
-        <div className="box">
-          <div className="icon">
-            <HistoryOutlined />
-          </div>
-          <span>Version History</span>
-        </div>
-        <div className="box">
-          <div className="icon">
-            <DeleteOutlined />
-          </div>
-          <span>Delete Resources</span>
-        </div>
-      </div>
-    </>
+      ))}
+    </div>
   );
 }
 

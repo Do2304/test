@@ -6,7 +6,8 @@
   border-radius: 10px;
 }
 
-.header .menu {
+.header .menu,
+.header .info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,12 +22,6 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
-}
-
-.header .info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .header .info .image img {
@@ -84,12 +79,11 @@
   }
 }
 @media (max-width: 600px) {
-  .header .info .bell {
-    display: none;
-  }
+  .header .info .bell,
   .header .info .down {
     display: none;
   }
+
   .header .info .name {
     margin-left: 1px;
   }

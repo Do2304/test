@@ -15,7 +15,7 @@ function HeaderCustom() {
         </div>
         <div className="info">
           <div className="image">
-            <img src={Mu} />
+            <img src={Mu} alt="avatar" />
           </div>
           <div className="name">
             <div className="name-name">Jack Kimber</div>

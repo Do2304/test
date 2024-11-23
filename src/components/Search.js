@@ -1,10 +1,20 @@
-import { SearchOutlined, SortAscendingOutlined, TagsOutlined } from "@ant-design/icons";
+import {
+  SearchOutlined,
+  SortAscendingOutlined,
+  TagsOutlined,
+} from "@ant-design/icons";
 import { Button, Col, Row, Select } from "antd";
 
 function Search() {
   const handleChange = (value) => {
     console.log(`selected ${value}`);
   };
+  const sortOptions = [
+    { value: "Newest", label: "Newest" },
+    { value: "Older", label: "Older" },
+    { value: "Discount", label: "Discount" },
+    { value: "disabled", label: "Disabled", disabled: true },
+  ];
   return (
     <>
       <div className="search">
@@ -46,25 +56,7 @@ function Search() {
                     width: 120,
                   }}
                   onChange={handleChange}
-                  options={[
-                    {
-                      value: "Newest",
-                      label: "Newest",
-                    },
-                    {
-                      value: "older",
-                      label: "older",
-                    },
-                    {
-                      value: "Yiminghe",
-                      label: "yiminghe",
-                    },
-                    {
-                      value: "disabled",
-                      label: "Disabled",
-                      disabled: true,
-                    },
-                  ]}
+                  options={sortOptions}
                 />
               </div>
             </div>

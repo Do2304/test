@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../css/footer.css";
 
 function FooterCustom() {
-  const [current, setCurrent] = useState(3);
+  const [current, setCurrent] = useState(2);
   const onChange = (page) => {
     console.log(page);
     setCurrent(page);
@@ -13,7 +13,7 @@ function FooterCustom() {
       <div className="footer">
         <Pagination
           align="end"
-          defaultCurrent={2}
+          defaultCurrent={current}
           total={30}
           onChange={onChange}
         />
