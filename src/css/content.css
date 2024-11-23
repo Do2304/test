@@ -68,9 +68,8 @@
 
 .main .box:active {
   box-shadow: rgba(237, 42, 20, 0.25) 0px 10px 10px,
-    rgba(65, 140, 232, 0.12) 0px -10px 30px,
-    rgba(235, 58, 35, 0.12) 0px 4px 6px, rgba(229, 57, 41, 0.17) 0px 10px 13px,
-    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    rgba(65, 140, 232, 0.12) 0px -10px 30px, rgba(235, 58, 35, 0.12) 0px 4px 6px,
+    rgba(229, 57, 41, 0.17) 0px 10px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .main .box .title {
@@ -119,4 +118,13 @@
 
 .main .box:active {
   border-color: red;
+}
+
+@media (max-width: 430px) {
+  .management h3 {
+    font-size: 13px;
+  }
+  .search .row-search {
+    display: block;
+  }
 }

@@ -86,3 +86,14 @@
     font-size: 40px;
   }
 }
+@media (max-width: 600px) {
+  .header .info .bell {
+    display: none;
+  }
+  .header .info .down {
+    display: none;
+  }
+  .header .info .name {
+    margin-left: 1px;
+  }
+}
