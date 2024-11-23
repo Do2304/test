@@ -118,24 +118,24 @@
     align-items: center;
   }
   .sider .menu-sider .box {
-    padding: 3px 3px;
+    padding: 1px 1px;
     border-radius: 5px;
     .icon {
       display: none;
     }
     span {
-      font-size: 10px;
+      font-size: 7px;
       padding: 2px;
     }
   }
   .sider .menu-sider .box1 {
-    padding: 3px 3px;
+    padding: 1px 1px;
     border-radius: 5px;
     .icon {
       display: none;
     }
     span {
-      font-size: 10px;
+      font-size: 7px;
       padding: 1px;
     }
   }
