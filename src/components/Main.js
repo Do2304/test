@@ -31,7 +31,7 @@ function Main() {
     <>
       <div className="main">
         <Row gutter={[30, 30]}>
-          {boxes.map((box) => (
+          {boxes.map((box, index) => (
             <Col xl={6} lg={8} md={12} key={box.id}>
               <div className="box" onClick={() => showModal(box.id)}>
                 <div className="title">
@@ -40,10 +40,13 @@ function Main() {
                 </div>
                 <div className="sub">{box.version}</div>
                 <div className="image">
-                  <img src={bg} alt="background"/>
+                  <img src={bg} alt="background" />
                 </div>
                 <div className="quick">
-                  <Button color="primary" variant="outlined">
+                  <Button
+                    className={index === 0 ? "quick-review" : "btn-primary"}
+                    variant="outlined"
+                  >
                     Quick review
                   </Button>
                   <Button className="btn">

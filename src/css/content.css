@@ -98,6 +98,15 @@
   display: flex;
   justify-content: space-between;
 }
+.quick-review {
+  color: blue; 
+  font-weight: 500;
+}
+
+.btn-primary {
+  color: black; 
+  font-weight: 500;
+}
 
 .quick:nth-child(1),
 .main .box .btn {
