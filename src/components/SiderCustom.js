@@ -12,13 +12,13 @@ function SiderCustom() {
             <div className="icon">
               <HomeOutlined />
             </div>
-            <span>Content Management</span>
+            <span className="box-title">Content Management</span>
           </div>
-          <div className="box1">
-            <div className="icon">
+          <div className="box unactive">
+            <div className="icon unactive">
               <FolderOpenOutlined />
             </div>
-            <span>Course Management</span>
+            <span className="box-title">Course Management</span>
           </div>
         </div>
       </div>

@@ -22,48 +22,30 @@
   align-items: center;
   background: rgb(35, 35, 228);
   padding: 10px 20px;
-  margin-bottom: 10px;
-  margin: 0 10px;
+
+  margin: 10px 10px;
   border-radius: 10px;
   color: white;
   cursor: pointer;
 }
 .sider .menu-sider .box .icon {
   padding: 5px 10px;
-
   font-size: 20px;
   border-radius: 6px;
   margin-right: 5px;
 }
-.sider .menu-sider .box1 {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(240, 240, 243);
-  padding: 10px 20px;
-  margin-top: 10px;
-  border-radius: 10px;
+.menu-sider .box.unactive {
+  background: #999797;
   color: black;
-  cursor: pointer;
 }
-.sider .menu-sider .box1 .icon {
-  padding: 5px 10px;
-  background: rgb(214, 213, 213);
-  font-size: 20px;
-  border-radius: 6px;
-  margin-right: 5px;
+
+.menu-sider .icon.unactive {
+  color: black;
 }
 
 @media (max-width: 992px) {
   .sider .menu-sider .box {
-    /* font-size: 10px; */
-    padding: 5px 10px;
-    .icon {
-      padding: 3px 5px;
-      font-size: 17px;
-    }
-  }
-  .sider .menu-sider .box1 {
+    font-size: 14px;
     padding: 5px 10px;
     .icon {
       padding: 3px 5px;
@@ -74,36 +56,18 @@
 @media (max-width: 768px) {
   .sider .menu-sider .box {
     padding: 2px 4px;
-    .icon {
-      display: none;
-    }
-  }
-  .sider .menu-sider .box1 {
-    padding: 2px 4px;
-    .icon {
+    display: flex;
+    .box-title {
       display: none;
     }
   }
 }
 @media (max-width: 600px) {
   .sider .menu-sider .box {
-    padding: 1px 2px;
-    .icon {
+    padding: 2px 4px;
+    display: flex;
+    .box-title {
       display: none;
-    }
-    span {
-      font-size: 12px;
-      padding: 2px;
-    }
-  }
-  .sider .menu-sider .box1 {
-    padding: 1px 2px;
-    .icon {
-      display: none;
-    }
-    span {
-      font-size: 12px;
-      padding: 2px;
     }
   }
 }
@@ -112,31 +76,11 @@
   .sider .title {
     font-size: 15px;
   }
-  .sider .menu-sider {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .sider .menu-sider .box {
-    padding: 1px 1px;
-    border-radius: 5px;
-    .icon {
+    padding: 2px 4px;
+    display: flex;
+    .box-title {
       display: none;
-    }
-    span {
-      font-size: 7px;
-      padding: 2px;
-    }
-  }
-  .sider .menu-sider .box1 {
-    padding: 1px 1px;
-    border-radius: 5px;
-    .icon {
-      display: none;
-    }
-    span {
-      font-size: 7px;
-      padding: 1px;
     }
   }
 }

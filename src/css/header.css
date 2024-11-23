@@ -56,7 +56,6 @@
 .header .info .name-position {
   font-size: 15px;
   cursor: pointer;
-  /* line-height: 0; */
 }
 
 .header .info .down {
@@ -68,12 +67,10 @@
   margin: 10px;
   height: 40px;
   width: 40px;
-
   background: rgb(124, 124, 233);
   display: flex;
   justify-content: center;
   align-items: center;
-
   border-radius: 6px;
   cursor: pointer;
 }
