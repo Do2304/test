@@ -74,4 +74,11 @@
   .sider .title {
     font-size: 15px;
   }
+  .sider .menu-sider .box {
+    padding: 2px 4px;
+    display: flex;
+    .box-title {
+      display: none;
+    }
+  }
 }

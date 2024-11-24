@@ -3,7 +3,7 @@ import {
   SortAscendingOutlined,
   TagsOutlined,
 } from "@ant-design/icons";
-import { Button, Col, Input, Row, Select } from "antd";
+import { Col, Input, Row, Select } from "antd";
 
 function Search() {
   const handleChange = (value) => {
