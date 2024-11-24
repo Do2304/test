@@ -3,7 +3,7 @@ import {
   SortAscendingOutlined,
   TagsOutlined,
 } from "@ant-design/icons";
-import { Button, Col, Row, Select } from "antd";
+import { Button, Col, Input, Row, Select } from "antd";
 
 function Search() {
   const handleChange = (value) => {
@@ -20,30 +20,20 @@ function Search() {
       <div className="search">
         <Row gutter={[5, 5]} className="row-search">
           <Col xl={8} lg={8} md={8}>
-            <Button
-              className="box1"
-              color="default"
-              variant="outlined"
-              icon={<SearchOutlined />}
-              block
-            >
-              Search Resources
-            </Button>
+            <Input
+              className="box2"
+              size="medium"
+              placeholder="Search Resources"
+              prefix={<SearchOutlined />}
+            />
           </Col>
           <Col xl={8} lg={8} md={8}>
-            <Button
+            <Input
               className="box2"
-              color="default"
-              icon={
-                <div className="icon-wrapper">
-                  <TagsOutlined />
-                </div>
-              }
-              iconPosition="end"
-              block
-            >
-              Search By Tags
-            </Button>
+              size="medium"
+              placeholder="Search By Tags..."
+              suffix={<TagsOutlined />}
+            />
           </Col>
           <Col xl={8} lg={8} md={8}>
             <div className="newest">
